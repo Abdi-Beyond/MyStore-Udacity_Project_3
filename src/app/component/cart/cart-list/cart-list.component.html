@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <mat-card class="product-card" *ngFor="let product of products">
+      <mat-card-header>
+    
+        <mat-card-title>{{product.products.title}}</mat-card-title>
+      </mat-card-header>
+      <img  src="{{product.products.thumbnail}}" alt="{{product.products.title}}">
+      <mat-card-content>
+      </mat-card-content>
+       <mat-label> Price: {{product.products.price | currency: 'USD'}}</mat-label>
+       
+       <mat-label> Amount:
+       <input type="number" min="1" [(ngModel)]="product.quantity">
+      </mat-label>
+      <button mat-fab color="warn" (click)="delete(product.products)">
+        <mat-icon>delete</mat-icon>
+
+      </button>
+    </mat-card>
+
+
+    </div>
+    <mat-label>Total Price: {{total()}}</mat-label>

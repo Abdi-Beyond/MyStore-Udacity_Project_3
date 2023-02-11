@@ -1,0 +1,26 @@
+.wraper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+   
+
+}
+.form{
+
+    height: 100%;
+    width: 100%;
+   
+    margin: 20px;
+    
+   
+
+}
+.list{
+    margin: 20PX;
+    height: 100%;
+    width: 100%;
+ 
+
+   
+}

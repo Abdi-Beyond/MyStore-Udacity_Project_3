@@ -1,0 +1,25 @@
+.cart-form{
+    display: grid;
+  
+    background-color: #f1f1f1;
+    
+
+}
+h1,h2,h3,p{
+    text-align: center;
+}
+.wrapper{
+    display: grid;
+    align-items: center;
+    background-color: #f1f1f1;
+    margin: 20px;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.mat-form-field{
+    margin: 10px;
+    
+}

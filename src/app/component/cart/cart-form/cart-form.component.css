@@ -1,0 +1,23 @@
+.cart-form{
+    display: grid;
+  
+    background-color: #f1f1f1;
+    
+
+}
+.wrapper{
+    display: grid;
+
+    
+    background-color: #f1f1f1;
+    margin: 20px;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+
+}
+.mat-form-field{
+    margin: 10px;
+    
+}
