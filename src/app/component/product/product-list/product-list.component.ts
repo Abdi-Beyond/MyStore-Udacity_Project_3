@@ -31,7 +31,7 @@ export class ProductListComponent implements OnInit {
   addtocart(products: Product, selectedValue: number){
     this.cartservice.addtocart(products,selectedValue);
   
-    console.log(this.selectedValue);
+    alert("Product added to cart");
   }
 
   
