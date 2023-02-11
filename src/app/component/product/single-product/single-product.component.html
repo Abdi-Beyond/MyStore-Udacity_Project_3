@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <mat-card *ngFor="let item of singleproduct">
+            <mat-card-header>
+                <mat-card-title>
+                    <h2>{{item.products.title}}</h2>
+                </mat-card-title>
+            </mat-card-header>
+            <img src="{{item.products.thumbnail}}" alt="{{item.products.title}}">
+           
+            <mat-card-actions>
+               <input type="number" min="1" [(ngModel)]="selectedValue" name="quantity">
+                <button mat-flat-button color="primary" (click)="addtocart(item.products, selectedValue)">Add to Cart</button>
+            </mat-card-actions>
+        
+    </mat-card>
+</div>

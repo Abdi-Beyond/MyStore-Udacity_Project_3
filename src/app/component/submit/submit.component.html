@@ -1,0 +1,28 @@
+<div class="wrapper">
+ 
+<h1>🎉 🎉 🎉  Success!!!  🎉 🎉 🎉</h1>
+<h3>Order is confirmed!</h3>
+<p>Please allow 1-3 business day(s) for shipping</p>
+
+<table mat-table [dataSource]="products" class="mat-elevation-z8">
+    <!-- Item Column -->
+    <ng-container matColumnDef="item">
+      <th mat-header-cell *matHeaderCellDef> Item </th>
+      <td mat-cell *matCellDef="let transaction"> {{transaction.title}} </td>
+      <td mat-footer-cell *matFooterCellDef> Total </td>
+    </ng-container>
+  
+    <!-- Cost Column -->
+    <ng-container matColumnDef="cost">
+      <th mat-header-cell *matHeaderCellDef> Cost </th>
+      <td mat-cell *matCellDef="let transaction"> {{transaction.price | currency}} </td>
+      <td mat-footer-cell *matFooterCellDef> {{total | currency}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  </table>
+
+  <button mat-stroked-button color="primary" routerLink="/">Back to Home</button>
+</div>
