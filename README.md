@@ -16,6 +16,8 @@ Run `npm install` to install all the dependencies. Then run `ng serve` to start 
 url: https://material.angular.io/
 
 
+### Author
 
+* **Abdi Abader**
 
 

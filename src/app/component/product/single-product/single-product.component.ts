@@ -18,6 +18,7 @@ export class SingleProductComponent implements OnInit {
   }
   addtocart(products: Product, selectedValue: number){
     this.cartservice.addtocart(products,selectedValue);
+    alert("Product added to cart");
   }
 
 
