@@ -26,6 +26,7 @@ export class CartListComponent {
   }
  delete(product: Product){
     this.cartservice.delete(product);
+    alert("{{product.title}} deleted");
   }
 
 
