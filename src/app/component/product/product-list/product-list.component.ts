@@ -11,10 +11,9 @@ import { SingleproductService } from 'src/app/services/singleproduct.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
-  products : Product[] =[]
+ @Input() productlist!: Product;
   selectedValue: number = 1;
-  @Input() singleproduct: Quantity[] = [];  
+ 
 
 
   constructor(private productservice: ProductServiceService, private cartservice: CartService,
@@ -22,11 +21,7 @@ export class ProductListComponent implements OnInit {
    
   }
   ngOnInit(): void {
-
-
-    this.productservice.getProducts().subscribe((data: Productapiresponse) => {
-      this.products = data.products;
-    })
+  
   }
   addtocart(products: Product, selectedValue: number){
     this.cartservice.addtocart(products,selectedValue);

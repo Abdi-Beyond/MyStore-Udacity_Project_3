@@ -1,7 +1,7 @@
 .product-card {
    width: 400px;
    padding: 10px;
-   display: inline-table;
+
     margin: 20px;
     border: 1px solid #ccc;
 
@@ -9,11 +9,12 @@
   }
 .wrapper{
     padding: 1rem;
-    margin: 1rem;
+   
+    display: inline-block;
 }
 img {
 height: 250px;
-width: 400px;
+width: 350px;
 }
 p{
   max-height: min-content;

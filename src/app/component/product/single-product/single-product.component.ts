@@ -10,11 +10,14 @@ import { Product } from 'src/app/models/products.interface';
   styleUrls: ['./single-product.component.css']
 })
 export class SingleProductComponent implements OnInit {
+  @Input() title: string = '';
  singleproduct: Quantity[] = [];
   selectedValue: number = 1;
   constructor(private singleservice: SingleproductService, private cartservice: CartService) { }
   ngOnInit(): void {
   this.singleproduct = this.singleservice.getsingleproduct();
+
+  
   }
   addtocart(products: Product, selectedValue: number){
     this.cartservice.addtocart(products,selectedValue);

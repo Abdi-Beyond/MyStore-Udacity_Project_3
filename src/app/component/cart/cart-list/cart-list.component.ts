@@ -8,6 +8,7 @@ import { Quantity } from 'src/app/models/quantity.interface';
   styleUrls: ['./cart-list.component.css']
 })
 export class CartListComponent {
+  validate: boolean = false;
    prices: number = 0;
    quantity: number  = 0;
   products: Quantity[] = [];
@@ -26,7 +27,7 @@ export class CartListComponent {
   }
  delete(product: Product){
     this.cartservice.delete(product);
-    alert("{{product.title}} deleted");
+    alert(product.title + " has been deleted from your cart");
   }
 
 

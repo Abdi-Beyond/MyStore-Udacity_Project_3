@@ -1,21 +1,21 @@
 <div class="wrapper">
-<form class="cart-form" [formGroup]="cartForm" *ngIf="cartForm" ng>
-    
-    <mat-form-field class="mat-form-field">
-      <mat-label>Name</mat-label>
-      <input type="text" matInput formControlName="name" placeholder="Your name">
-      <mat-hint>minimum 3 Character</mat-hint>
-    </mat-form-field>
-    <mat-form-field class="mat-form-field">
-        <mat-label>Address</mat-label>
-        <input type="text" matInput formControlName="address" placeholder="Your name">
-        <mat-hint>minimum 6 Character</mat-hint>
+  <form class="cart-form" [formGroup]="cartForm" *ngIf="cartForm" ng>
+      
+      <mat-form-field class="mat-form-field">
+        <mat-label>Name</mat-label>
+        <input type="text" matInput formControlName="name" placeholder="Your name">
+        <mat-hint>minimum 3 Character</mat-hint>
       </mat-form-field>
       <mat-form-field class="mat-form-field">
-        <mat-label>Credit Number</mat-label>
-        <input type="text" matInput formControlName="creditnumber" placeholder="Your name">
-        <mat-hint>16 Digit Number</mat-hint>
-      </mat-form-field>
-      <button mat-raised-button color="primary"[disabled]="cartForm.invalid" routerLink="/submit">Submit</button>
-  </form>
-</div>
+          <mat-label>Address</mat-label>
+          <input type="text" matInput formControlName="address" placeholder="Your name">
+          <mat-hint>minimum 6 Character</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="mat-form-field">
+          <mat-label>Credit Number</mat-label>
+          <input type="text" matInput formControlName="creditnumber" placeholder="Your name">
+          <mat-hint>16 Digit Number</mat-hint>
+        </mat-form-field>
+        <button mat-raised-button color="primary"[disabled]="cartForm.invalid" routerLink="/submit">Submit</button>
+    </form>
+  </div>

@@ -1,14 +1,14 @@
-
 <div class="wrapper">
-<mat-card class="product-card" *ngFor="let product of products">
+<mat-card class="product-card">
   <mat-card-header>
 
-    <mat-card-title>{{product.title}}</mat-card-title>
+    <mat-card-title>{{productlist.title}}</mat-card-title>
   </mat-card-header>
-  <a routerLink="/single" (click)="single(product,selectedValue)"><img  src="{{product.thumbnail}}" alt="{{product.title}}"></a>
+  <a routerLink="/single" (click)="single(productlist,selectedValue)"><img  src="{{productlist.thumbnail}}" alt="{{productlist.title}}"></a>
+
   <mat-card-content>
   </mat-card-content>
-   <mat-label> Price: {{product.price | currency: 'USD'}}</mat-label>
+   <mat-label> Price: {{productlist.price | currency: 'USD'}}</mat-label>
   <mat-card-actions>
   <select matNativeControl [(ngModel)]="selectedValue" name="quantity">
     <option *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]" [value]="i">{{i}}</option>
@@ -16,6 +16,6 @@
      
  
   </mat-card-actions>
-  <button mat-flat-button color="primary" (click)="addtocart(product,selectedValue)">Add to Cart</button>
+  <button mat-flat-button color="primary" (click)="addtocart(productlist,selectedValue)">Add to Cart</button>
 </mat-card>
 </div>
