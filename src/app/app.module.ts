@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadersComponent } from './layouts/headers/headers.component'
 import {MatCardModule} from '@angular/material/card';
-import { MatFormField, MatFormFieldAppearance } from '@angular/material/form-field';
+import {MatBadgeModule} from '@angular/material/badge';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -62,7 +62,8 @@ import {MatTableModule} from '@angular/material/table';
     MatSelectModule,
     MatTabsModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatBadgeModule,
 
 
 

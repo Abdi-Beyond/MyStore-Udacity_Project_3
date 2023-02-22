@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../models/products.interface';
 import { ProductListComponent } from '../component/product/product-list/product-list.component';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -34,6 +35,9 @@ delete(product: Product){
   if(index > -1){
     this.cart.splice(index, 1);
   }
+}
+freecart(){
+  this.cart = [];
 }
 
 

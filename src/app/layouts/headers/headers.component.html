@@ -1,11 +1,19 @@
 <div class="header">
-
+   
 <h1> My Store </h1>
 
-<nav> 
+   <div class="navi">
+   <div class="prodcutlist">
+
+  
     <a routerLink="/producthome" routerLinkActive="active">Product List</a>
+</div>
     ||
-    <a routerLink="/mycart" routerLinkActive="active">Cart🛒</a>
-</nav>
+    <div class="host">
+        <div matBadge="{{counter()}}" matBadgeOverlap="false" class="demo-section" matBadgeColor="primary" > <a routerLink="/mycart" routerLinkActive="active">Cart🛒</a></div>
+        
+   
+</div>
+</div>
 
 </div>

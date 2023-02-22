@@ -7,13 +7,15 @@ import { Product } from '../models/products.interface';
 export class SingleproductService {
   singleproduct: Quantity[] = [];
 
+
   constructor() { }
   getsingleproduct(){
     return this.singleproduct;
   }
 
-  addproduct(product: Product, quantity: number){
-    this.singleproduct.push({products: product, quantity: quantity});
+  addproduct(products: Product, quantity: number){
+    this.singleproduct = [];
+    this.singleproduct.push({products: products, quantity: quantity});
 
 }
 

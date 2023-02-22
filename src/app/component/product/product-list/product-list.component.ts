@@ -11,7 +11,7 @@ import { SingleproductService } from 'src/app/services/singleproduct.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
- @Input() productlist!: Product;
+ @Input() productlist!: Product
   selectedValue: number = 1;
  
 
@@ -31,6 +31,8 @@ export class ProductListComponent implements OnInit {
 
   
   single(product: Product, selectedValue: number){
+
+  
    this.singleproductservice.addproduct(product,selectedValue);
   }
 }

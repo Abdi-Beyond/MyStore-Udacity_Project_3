@@ -2,24 +2,25 @@
     background-color:#00CED1;
     border-bottom: 1px solid #e5e5e5;
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    display: grid;
+   display: grid;
     height: 200px;
+}
+.navi {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: -10px;
+    margin-left: 625px;
 }
 h1
 {
     color: white;
     text-align: center;
     margin-top: 50px;
+ 
 }
-nav 
-{   
-    text-align: center;
-    margin-bottom: 10px;
-    color: #e5e5e5;
-    font-size: 30px;
-    font-weight: bold;
 
-}
+
 a{
     display: inline;
     padding: 5px;
@@ -37,4 +38,7 @@ p {
     color: white;
     text-align: center;
     font-size: 25px;
+}
+.productlist {
+    padding-left: 10px;
 }

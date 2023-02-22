@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,Output, EventEmitter} from '@angular/core';
 import { Product } from 'src/app/models/products.interface';
 import { CartService } from 'src/app/services/cart.service';
 import { Quantity } from 'src/app/models/quantity.interface';
@@ -8,11 +8,17 @@ import { Quantity } from 'src/app/models/quantity.interface';
   styleUrls: ['./cart-list.component.css']
 })
 export class CartListComponent {
+  @Output() titleChanged = new EventEmitter<string>();
   validate: boolean = false;
    prices: number = 0;
    quantity: number  = 0;
   products: Quantity[] = [];
   Total: number= 0;
+ 
+  
+  changeTitle() {
+    this.titleChanged.emit('New Title');
+  }
   constructor(private cartservice: CartService) {
     this.products = this.cartservice.getCart();
   }

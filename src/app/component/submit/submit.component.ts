@@ -22,9 +22,13 @@ export class SubmitComponent implements OnInit{
         this.total += (element.products.price * element.quantity);
   
       });
+
   
  
 
 }
+ngOnDestroy() {
+  this.cartservice.freecart();
 
+}
 }
