@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### SCREENSHOTS
 
-![alt text](screenshot1.png)
+![alt text](screenshot.png)
 
 
 ## Development server
