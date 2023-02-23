@@ -10,7 +10,7 @@
        <mat-label> Price: {{product.products.price | currency: 'USD'}}</mat-label>
        
        <mat-label> Amount:
-       <input type="number" min="1" [(ngModel)]="product.quantity">
+       <input type="number" min="1" [(ngModel)]="product.quantity" (ngModelChange)="quantitychange($event)">
       </mat-label>
       <button mat-fab color="warn" (click)="delete(product.products)">
         <mat-icon>delete</mat-icon>

@@ -23,3 +23,15 @@ h1,h2,h3,p{
     margin: 10px;
     
 }
+button:hover {
+    background-color: whitesmoke;
+    color: royalblue;
+    font-weight: bold;
+    border-style: dashed;
+    border-color: royalblue;
+
+    
+}
+button {
+    margin-top: 50px;
+}

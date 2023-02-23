@@ -21,5 +21,11 @@ p{
 }
 select {
   width: 100px;
-}
 
+  background-color: whitesmoke;
+}
+button:hover{
+  color: royalblue;
+  background-color: whitesmoke;
+  border-style: dashed;
+}

@@ -4,6 +4,7 @@ import { ProductServiceService } from 'src/app/services/product-service.service'
 import { CartService } from 'src/app/services/cart.service';
 import { Quantity } from 'src/app/models/quantity.interface';
 import { SingleproductService } from 'src/app/services/singleproduct.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-product-list',
@@ -17,16 +18,19 @@ export class ProductListComponent implements OnInit {
 
 
   constructor(private productservice: ProductServiceService, private cartservice: CartService,
-    private singleproductservice: SingleproductService) {
+    private singleproductservice: SingleproductService, private toastr: ToastrService) {
    
   }
   ngOnInit(): void {
-  
+   
   }
   addtocart(products: Product, selectedValue: number){
     this.cartservice.addtocart(products,selectedValue);
+  alert('Your product has been added to the cart!');
+
   
-    alert("Product added to cart");
+
+   
   }
 
   

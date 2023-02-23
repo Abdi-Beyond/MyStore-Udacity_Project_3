@@ -28,6 +28,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { SubmitComponent } from './component/submit/submit.component';
 import { SingleProductComponent } from './component/product/single-product/single-product.component';
 import {MatTableModule} from '@angular/material/table';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -64,8 +65,7 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatTableModule,
     MatBadgeModule,
-
-
+    ToastrModule.forRoot()
 
 
   ],

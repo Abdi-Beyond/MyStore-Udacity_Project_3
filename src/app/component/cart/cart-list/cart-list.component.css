@@ -33,4 +33,14 @@ input {
 button {
      margin-left: 150px;
      margin-bottom: 10px;
+     color: coral;
+     background-color: whitesmoke;
+   
+     
+}
+button:hover {
+    background-color: coral;
+    color: whitesmoke;
+    border-style:dashed;
+    border-color: whitesmoke;
 }

@@ -36,5 +36,11 @@ export class CartListComponent {
     alert(product.title + " has been deleted from your cart");
   }
 
+  quantitychange(quantity: number){
+    this.quantity = quantity;
+    console.log(this.quantity);
+    console.log(quantity);
+  }
+
 
 }

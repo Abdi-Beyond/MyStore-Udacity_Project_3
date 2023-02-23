@@ -17,17 +17,14 @@ export class CartFormComponent implements OnInit {
     this.cartForm = this.formbuilder.group({
       name: [undefined,[Validators.required, Validators.minLength(3)]],
       address: [undefined,[Validators.required, Validators.minLength(6)]],
-      creditnumber: [undefined,[Validators.required, Validators.minLength(16),Validators.pattern('[0-9]*')]],
+      creditnumber: [undefined,[Validators.required, Validators.minLength(16),Validators.pattern('[0-9]*')],]
+      
+
    })
-   this.Observevalues();
+
   
   }
 
-  Observevalues(): void {
-    console.log(this.cartForm);
-    this.cartForm?.valueChanges.subscribe(val => console.log(val));
-  }
-  
 
 
 }
